@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body class="body">
+  <nav class="md:pl-[4rem] md:pr-[2.4rem]">
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><img src="assets/images/icon-menu-close.svg" alt="icon-menu-close"></a>
+      </li>
+      <li class="mobile-menu-item"><a href="#">Home</a></li>
+      <li class="mobile-menu-item"><a href="#">New</a></li>
+      <li class="mobile-menu-item"><a href="#">Popular</a></li>
+      <li class="mobile-menu-item"><a href="#">Trending</a></li>
+      <li class="mobile-menu-item"><a href="#">Categories</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#"><img src="assets/images/logo.svg" alt="logo"></a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">New</a></li>
+      <li class="hideOnMobile"><a href="#">Popular</a></li>
+      <li class="hideOnMobile"><a href="#">Trending</a></li>
+      <li class="hideOnMobile"><a href="#">Categories</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><img src="assets/images/icon-menu.svg" alt="menu-icon"
+            style="width: 30px;"></a></li>
+    </ul>
+  </nav>
+
+  <main class="px-[1.5rem] md:px-[4rem]">
+    <div class="lg:grid lg:grid-cols-3 gap-4 md:grid-cols-1">
+      <div class="section-one-left col-span-2 md:pl-[2.6rem]">
+        <div class="md:hidden lg:hidden">
+          <img src="assets/images/image-web-3-mobile.jpg" alt="web-3-image">
+        </div>
+        <div class="hidden md:block">
+          <img class="col-span-2" src="assets/images/image-web-3-desktop.jpg" alt="">
+        </div>
+        <div class="block md:grid md:grid-cols-2 gap-1 mt-10">
+          <h1 class="text-[4rem] font-bold leading-[4rem]">
+            The Bright Future of Web 3.0?
+          </h1>
+          <article class="px-[.4rem] mt-[2rem] md:px-[.9rem] md:mt-[0rem]">
+            <p class="text-slate-800 leading-[2rem] md:[text-black-700] md:leading-normal">
+              We dive into the next evolution of the web that
+              claims to put the power of the platforms back
+              into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button class="bg-red-400 px-[4rem] py-[1rem] 
+            mt-[2.3rem] tracking-[.2rem] md:mt-[4.5rem] mb-24 md:mb-[0rem]">
+              READ MORE
+            </button>
+          </article>
+        </div>
+      </div>
+
+
+      <div class="section-one-right bg-slate-950 px-[2rem] py-[1.2rem] text-white ml-[.3rem] md:ml-[3rem] md:mt-[3rem] lg:mt-[0rem]">
+        <h1 class="text-[2.5rem] mb-8 text-orange-300">New</h2>
+        <div class="col-1 border-b-2 border-neutral-600 leading-[2rem] h-[8rem] mb-7">
+          <h3 class="text-[1.2rem]">Hydrogen VS Electric Cars</h3>
+          <p class="text-slate-400">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="col-2 border-b-2 border-neutral-600 leading-[2rem] h-[8rem] mb-7">
+          <h3 class="text-[1.2rem]">The Downsides of AI Artistry</h3>
+          <p class="text-slate-400">  What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="col-3 leading-[2rem]">
+          <h3 class="text-[1.2rem]">Is VC Funding Drying Up?</h3>
+          <p class="text-slate-400">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-two grid lg:grid-cols-3 gap-20 mt-20 px-[.5rem] mb-[5rem] md:grid-cols-1 md:gap-10 md:px-[3.3rem]">
+      <div class="01 col-span-1 grid grid-cols-3 gap-1 md:pl-[0rem]">
+        <img class="md:w-[7rem] md:h-[9.6rem] col-span-1" src="assets/images/image-retro-pcs.jpg" alt="retro PCs">
+        <div class="col-span-2 md:pl-2 pl-8 leading-[3.8rem] md:leading-[2rem]">
+          <h1 class="text-red-500 text-[3rem] md:text-[2rem] mb-3">01</h1>
+          <h3 class="font-bold text-[1.5rem] md:text-[1.2rem] text-black-700 md:mb-3">Reviving Retro PCs</h3>
+          <p class="text-slate-800 text-[1.3rem] md:text-[1.2rem] md:text-slate-400 md:leading-[1.5rem] leading-[2rem]">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="02 col-span-1 grid grid-cols-3 gap-1 md:pl-[0rem]">
+        <img class="md:w-[7rem] md:h-[9.6rem] col-span-1" src="assets/images/image-top-laptops.jpg" alt="Top 10 Laptops of 2022">
+        <div class="col-span-2 md:pl-2 pl-8 leading-[3.8rem] md:leading-[2rem]">
+          <h1 class="text-red-500 text-[3rem] md:text-[2rem] mb-3">02</h1>
+          <h3 class="font-bold text-[1.5rem] md:text-[1.2rem] text-black-700 md:mb-3">Top 10 Laptops of 2022</h3>
+          <p class="text-slate-800 text-[1.3rem] md:text-[1.2rem] md:text-slate-400 md:leading-[1.5rem] leading-[2rem]">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="03 col-span-1 grid grid-cols-3 md:pl-[0rem]">
+        <img class="md:w-[7rem] md:h-[9.6rem] col-span-1" src="assets/images/image-gaming-growth.jpg" alt="Growth of Gaming">
+        <div class="col-span-2 md:pl-2 pl-8 leading-[4rem] md:leading-[2rem]">
+          <h1 class="text-red-500 text-[3rem] md:text-[2rem] mb-3">03</h1>
+          <h3 class="font-bold text-[1.5rem] md:text-[1.2rem] text-black-700 md:mb-3">The Growth of Gaming</h3>
+          <p class="text-slate-800 text-[1.3rem] md:text-[1.2rem] md:text-slate-400 md:leading-[1.5rem] leading-[2rem]">How the pandemic has sparked fresh opportunities..</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!--
+
+  03
+
+   -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
