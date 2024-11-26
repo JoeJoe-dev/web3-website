@@ -140,3 +140,42 @@ nav li:first-child {
         font-size: 1.2rem;
     }
 }
+
+@media(max-width: 400px) {
+    .section-one-left p {
+        font-family: 'MyCustomFont2', sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .section-two img {
+        height: 7.7rem;
+    }
+
+    .section-two .col-span-2 {
+        padding-left: 1rem;
+        line-height: 1.3rem;
+        padding-top: .2rem;
+    }
+
+
+    .section-two h1 {
+        font-size: 1rem;
+    }
+
+    .section-two h3 {
+        font-size: .8rem;
+    }
+
+    .section-two .second h3 {
+        font-size: .75rem;
+    }
+
+    .section-two .third h3 {
+        font-size: .75rem;
+    }
+
+    .section-two p {
+        font-size: .8rem;
+    }
+}
